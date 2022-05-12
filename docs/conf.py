@@ -42,7 +42,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'ukstats.cc-v2.theme'
+project = u'ukstats.ccv2.theme'
 copyright = u'Alex Tucker (ajtucker)'
 author = u'Alex Tucker (ajtucker)'
 
@@ -199,7 +199,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'ukstats.cc-v2.themedoc'
+htmlhelp_basename = 'ukstats.ccv2.themedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 

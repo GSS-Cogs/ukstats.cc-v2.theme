@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
-from ukstats.cc-v2.theme.testing import (
-    UKSTATS_CC-V2_THEME_ACCEPTANCE_TESTING  # noqa: E501,
+from ukstats.ccv2.theme.testing import (
+    UKSTATS_CCV2_THEME_ACCEPTANCE_TESTING  # noqa: E501,
 )
 
 import os
@@ -24,7 +24,7 @@ def test_suite():
         suite.addTests([
             layered(
                 robottestsuite,
-                layer=UKSTATS_CC-V2_THEME_ACCEPTANCE_TESTING,
+                layer=UKSTATS_CCV2_THEME_ACCEPTANCE_TESTING,
             ),
         ])
     return suite

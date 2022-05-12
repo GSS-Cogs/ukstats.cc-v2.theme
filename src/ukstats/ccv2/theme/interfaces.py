@@ -4,5 +4,5 @@
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
 
-class IUkstatsCc-V2ThemeLayer(IDefaultBrowserLayer):
+class IUkstatsCcv2ThemeLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""

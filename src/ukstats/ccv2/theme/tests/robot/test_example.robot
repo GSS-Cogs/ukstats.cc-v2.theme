@@ -4,17 +4,17 @@
 #
 # Run this robot test stand-alone:
 #
-#  $ bin/test -s ukstats.cc-v2.theme -t test_example.robot --all
+#  $ bin/test -s ukstats.ccv2.theme -t test_example.robot --all
 #
 # Run this robot test with robot server (which is faster):
 #
 # 1) Start robot server:
 #
-# $ bin/robot-server --reload-path src ukstats.cc-v2.theme.testing.UKSTATS_CC-V2_THEME_ACCEPTANCE_TESTING
+# $ bin/robot-server --reload-path src ukstats.ccv2.theme.testing.UKSTATS_CCV2_THEME_ACCEPTANCE_TESTING
 #
 # 2) Run robot tests:
 #
-# $ bin/robot src/ukstats/cc-v2/theme/tests/robot/test_example.robot
+# $ bin/robot src/ukstats/ccv2/theme/tests/robot/test_example.robot
 #
 # See the http://docs.plone.org for further details (search for robot
 # framework).

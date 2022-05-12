@@ -9,10 +9,10 @@ from plone.app.testing import (
 )
 from plone.testing import z2
 
-import ukstats.cc-v2.theme
+import ukstats.ccv2.theme
 
 
-class UkstatsCc-V2ThemeLayer(PloneSandboxLayer):
+class UkstatsCcv2ThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
@@ -22,32 +22,32 @@ class UkstatsCc-V2ThemeLayer(PloneSandboxLayer):
         # layer.
         import plone.restapi
         self.loadZCML(package=plone.restapi)
-        self.loadZCML(package=ukstats.cc-v2.theme)
+        self.loadZCML(package=ukstats.ccv2.theme)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'ukstats.cc-v2.theme:default')
+        applyProfile(portal, 'ukstats.ccv2.theme:default')
 
 
-UKSTATS_CC-V2_THEME_FIXTURE = UkstatsCc-V2ThemeLayer()
+UKSTATS_CCV2_THEME_FIXTURE = UkstatsCcv2ThemeLayer()
 
 
-UKSTATS_CC-V2_THEME_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(UKSTATS_CC-V2_THEME_FIXTURE,),
-    name='UkstatsCc-V2ThemeLayer:IntegrationTesting',
+UKSTATS_CCV2_THEME_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(UKSTATS_CCV2_THEME_FIXTURE,),
+    name='UkstatsCcv2ThemeLayer:IntegrationTesting',
 )
 
 
-UKSTATS_CC-V2_THEME_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(UKSTATS_CC-V2_THEME_FIXTURE,),
-    name='UkstatsCc-V2ThemeLayer:FunctionalTesting',
+UKSTATS_CCV2_THEME_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(UKSTATS_CCV2_THEME_FIXTURE,),
+    name='UkstatsCcv2ThemeLayer:FunctionalTesting',
 )
 
 
-UKSTATS_CC-V2_THEME_ACCEPTANCE_TESTING = FunctionalTesting(
+UKSTATS_CCV2_THEME_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        UKSTATS_CC-V2_THEME_FIXTURE,
+        UKSTATS_CCV2_THEME_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='UkstatsCc-V2ThemeLayer:AcceptanceTesting',
+    name='UkstatsCcv2ThemeLayer:AcceptanceTesting',
 )

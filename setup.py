@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the ukstats.cc-v2.theme package."""
+"""Installer for the ukstats.ccv2.theme package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -13,9 +13,9 @@ long_description = '\n\n'.join([
 
 
 setup(
-    name='ukstats.cc-v2.theme',
+    name='ukstats.ccv2.theme',
     version='1.0a1',
-    description="Climate Change v2 theme and content",
+    description="Climate Change v2 profile and initial content",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
     classifiers=[
@@ -32,16 +32,16 @@ setup(
     keywords='Python Plone CMS',
     author='Alex Tucker',
     author_email='alex.tucker@ons.gov.uk',
-    url='https://github.com/collective/ukstats.cc-v2.theme',
+    url='https://github.com/collective/ukstats.ccv2.theme',
     project_urls={
-        'PyPI': 'https://pypi.python.org/pypi/ukstats.cc-v2.theme',
-        'Source': 'https://github.com/collective/ukstats.cc-v2.theme',
-        'Tracker': 'https://github.com/collective/ukstats.cc-v2.theme/issues',
-        # 'Documentation': 'https://ukstats.cc-v2.theme.readthedocs.io/en/latest/',
+        'PyPI': 'https://pypi.python.org/pypi/ukstats.ccv2.theme',
+        'Source': 'https://github.com/collective/ukstats.ccv2.theme',
+        'Tracker': 'https://github.com/collective/ukstats.ccv2.theme/issues',
+        # 'Documentation': 'https://ukstats.ccv2.theme.readthedocs.io/en/latest/',
     },
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
-    namespace_packages=['ukstats', 'ukstats.cc-v2'],
+    namespace_packages=['ukstats', 'ukstats.ccv2'],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
@@ -69,6 +69,6 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = ukstats.cc-v2.theme.locales.update:update_locale
+    update_locale = ukstats.ccv2.theme.locales.update:update_locale
     """,
 )

@@ -2,31 +2,31 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
-.. image:: https://travis-ci.org/collective/ukstats.cc-v2.theme.svg?branch=master
-    :target: https://travis-ci.org/collective/ukstats.cc-v2.theme
+.. image:: https://travis-ci.org/collective/ukstats.ccv2.theme.svg?branch=master
+    :target: https://travis-ci.org/collective/ukstats.ccv2.theme
 
-.. image:: https://coveralls.io/repos/github/collective/ukstats.cc-v2.theme/badge.svg?branch=master
-    :target: https://coveralls.io/github/collective/ukstats.cc-v2.theme?branch=master
+.. image:: https://coveralls.io/repos/github/collective/ukstats.ccv2.theme/badge.svg?branch=master
+    :target: https://coveralls.io/github/collective/ukstats.ccv2.theme?branch=master
     :alt: Coveralls
 
-.. image:: https://img.shields.io/pypi/v/ukstats.cc-v2.theme.svg
-    :target: https://pypi.python.org/pypi/ukstats.cc-v2.theme/
+.. image:: https://img.shields.io/pypi/v/ukstats.ccv2.theme.svg
+    :target: https://pypi.python.org/pypi/ukstats.ccv2.theme/
     :alt: Latest Version
 
-.. image:: https://img.shields.io/pypi/status/ukstats.cc-v2.theme.svg
-    :target: https://pypi.python.org/pypi/ukstats.cc-v2.theme
+.. image:: https://img.shields.io/pypi/status/ukstats.ccv2.theme.svg
+    :target: https://pypi.python.org/pypi/ukstats.ccv2.theme
     :alt: Egg Status
 
-.. image:: https://img.shields.io/pypi/pyversions/ukstats.cc-v2.theme.svg?style=plastic   :alt: Supported - Python Versions
+.. image:: https://img.shields.io/pypi/pyversions/ukstats.ccv2.theme.svg?style=plastic   :alt: Supported - Python Versions
 
-.. image:: https://img.shields.io/pypi/l/ukstats.cc-v2.theme.svg
-    :target: https://pypi.python.org/pypi/ukstats.cc-v2.theme/
+.. image:: https://img.shields.io/pypi/l/ukstats.ccv2.theme.svg
+    :target: https://pypi.python.org/pypi/ukstats.ccv2.theme/
     :alt: License
 
 
-===================
-ukstats.cc-v2.theme
-===================
+==================
+ukstats.ccv2.theme
+==================
 
 Tell me what your product does
 
@@ -60,14 +60,14 @@ This product has been translated into
 Installation
 ------------
 
-Install ukstats.cc-v2.theme by adding it to your buildout::
+Install ukstats.ccv2.theme by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        ukstats.cc-v2.theme
+        ukstats.ccv2.theme
 
 
 and then running ``bin/buildout``
@@ -76,8 +76,8 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/ukstats.cc-v2.theme/issues
-- Source Code: https://github.com/collective/ukstats.cc-v2.theme
+- Issue Tracker: https://github.com/collective/ukstats.ccv2.theme/issues
+- Source Code: https://github.com/collective/ukstats.ccv2.theme
 - Documentation: https://docs.plone.org/foo/bar
 
 

@@ -3,7 +3,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="ukstats.cc-v2.theme">
+    i18n_domain="ukstats.ccv2.theme">
 
   <i18n:registerTranslations directory="locales" />
 
@@ -19,25 +19,25 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="ukstats.cc-v2.theme"
+      title="ukstats.ccv2.theme"
       directory="profiles/default"
-      description="Installs the ukstats.cc-v2.theme add-on."
+      description="Installs the ukstats.ccv2.theme add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="ukstats.cc-v2.theme (uninstall)"
+      title="ukstats.ccv2.theme (uninstall)"
       directory="profiles/uninstall"
-      description="Uninstalls the ukstats.cc-v2.theme add-on."
+      description="Uninstalls the ukstats.ccv2.theme add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       post_handler=".setuphandlers.uninstall"
       />
 
   <utility
       factory=".setuphandlers.HiddenProfiles"
-      name="ukstats.cc-v2.theme-hiddenprofiles"
+      name="ukstats.ccv2.theme-hiddenprofiles"
       />
 
   <!-- -*- extra stuff goes here -*- -->

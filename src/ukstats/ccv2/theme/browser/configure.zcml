@@ -2,18 +2,18 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:plone="http://namespaces.plone.org/plone"
-    i18n_domain="ukstats.cc-v2.theme">
+    i18n_domain="ukstats.ccv2.theme">
 
   <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot
       directory="overrides"
-      layer="ukstats.cc-v2.theme.interfaces.IUkstatsCc-V2ThemeLayer"
+      layer="ukstats.ccv2.theme.interfaces.IUkstatsCcv2ThemeLayer"
       />
 
   <!-- Publish static files -->
   <plone:static
-      name="ukstats.cc-v2.theme"
+      name="ukstats.ccv2.theme"
       type="plone"
       directory="static"
       />

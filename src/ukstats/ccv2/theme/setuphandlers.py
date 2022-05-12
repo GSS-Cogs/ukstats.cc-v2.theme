@@ -9,7 +9,7 @@ class HiddenProfiles(object):
     def getNonInstallableProfiles(self):
         """Hide uninstall profile from site-creation and quickinstaller."""
         return [
-            'ukstats.cc-v2.theme:uninstall',
+            'ukstats.ccv2.theme:uninstall',
         ]
 
 

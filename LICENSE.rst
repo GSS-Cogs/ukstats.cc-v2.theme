@@ -1,4 +1,4 @@
-ukstats.cc-v2.theme Copyright 2022, Alex Tucker
+ukstats.ccv2.theme Copyright 2022, Alex Tucker
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License version 2

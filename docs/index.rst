@@ -1,5 +1,5 @@
-===================
-ukstats.cc-v2.theme
-===================
+==================
+ukstats.ccv2.theme
+==================
 
 User documentation

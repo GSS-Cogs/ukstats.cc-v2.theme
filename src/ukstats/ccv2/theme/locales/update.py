@@ -5,7 +5,7 @@ import pkg_resources
 import subprocess
 
 
-domain = 'ukstats.cc-v2.theme'
+domain = 'ukstats.ccv2.theme'
 os.chdir(pkg_resources.resource_filename(domain, ''))
 os.chdir('../../../')
 target_path = 'src/ukstats/theme/'

@@ -3,4 +3,4 @@
 from zope.i18nmessageid import MessageFactory
 
 
-_ = MessageFactory('ukstats.cc-v2.theme')
+_ = MessageFactory('ukstats.ccv2.theme')
