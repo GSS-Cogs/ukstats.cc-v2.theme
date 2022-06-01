@@ -5,7 +5,11 @@ import logging
 
 from Products.CMFPlone.interfaces import INonInstallable
 from Products.CMFPlone.utils import get_installer
-from kitconcept.volto.setuphandlers import enable_content_type, add_behavior, default_lrf_home
+from kitconcept.volto.setuphandlers import (
+    enable_content_type,
+    add_behavior,
+    default_lrf_home,
+)
 from plone import api
 from zope.interface import implementer
 
@@ -14,11 +18,10 @@ logger = logging.getLogger("ukstats.ccv2.theme")
 
 @implementer(INonInstallable)
 class HiddenProfiles(object):
-
     def getNonInstallableProfiles(self):
         """Hide uninstall profile from site-creation and quickinstaller."""
         return [
-            'ukstats.ccv2.theme:uninstall',
+            "ukstats.ccv2.theme:uninstall",
         ]
 
 
@@ -33,7 +36,7 @@ def uninstall(context):
 
 
 def import_initial_content(context, default_home=default_lrf_home):
-    """ This method allows to pass a dict with the homepage blocks and blocks_layout keys"""
+    """This method allows to pass a dict with the homepage blocks and blocks_layout keys"""
     portal = api.portal.get()
     # Test for PAM installed
     try:
@@ -89,65 +92,205 @@ def create_root_homepage(context, default_home=None):
             "Creating custom default homepage in Plone site root - not PAM enabled"
         )
     else:
-        blocks = {"1c396c10-f67e-40ba-8b63-9b8ef3cdb72d": {"@type": "heroHeader",
-                                                           "summary": "The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases to fulfil a wide range of international agreements as well as for domestic policy making purposes.",
-                                                           "title": "Measuring greenhouse gas emissions"},
-                  "bde9cf7e-9761-4cfe-8972-d13de956063e": {"@type": "slate", "plaintext": "",
-                                                           "value": [{"children": [{"text": ""}], "type": "p"}]},
-                  "e03c688a-6e8e-4405-8e60-2c89780274a5": {"@type": "title"},
-                  "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26": {"@type": "columnsBlock", "data": {"blocks": {
-                      "0d982eaa-0c91-4447-b61b-a1e4ee20e9c2": {"blocks": {
-                          "0e5927c5-2e92-48cf-8fb5-573da68d4511": {"@type": "dashboardTile",
-                                                                   "topic": "Climate and weather",
-                                                                   "title": "Annual mean temperature (\u00b0C) for the UK"},
-                          "ebcd7f8b-1ec5-4423-885e-e1824c28ec3c": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["0e5927c5-2e92-48cf-8fb5-573da68d4511", "ebcd7f8b-1ec5-4423-885e-e1824c28ec3c"]}},
-                      "0e3ef5e8-3806-4217-b539-cc71482effce": {"blocks": {
-                          "b6b5ff1f-96cf-44ae-a9dc-e3d6e9341450": {"@type": "dashboardTile", "topic": "Emissions",
-                                                                   "title": "Greenhouse gas emissions (Mt CO2e)"},
-                          "688fd38c-8228-4be4-a27f-4f8c48078155": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["b6b5ff1f-96cf-44ae-a9dc-e3d6e9341450", "688fd38c-8228-4be4-a27f-4f8c48078155"]}},
-                      "4cb32900-e164-4e7c-a0f7-46e03a86cc9e": {"blocks": {
-                          "d974efdc-e9ae-4c89-a5ee-217886bc91a2": {"@type": "dashboardTile", "topic": "Drivers",
-                                                                   "title": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK"},
-                          "2d1d85d9-2432-414b-9ebc-41c4d0885712": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["d974efdc-e9ae-4c89-a5ee-217886bc91a2", "2d1d85d9-2432-414b-9ebc-41c4d0885712"]}}},
-                                                                                             "blocks_layout": {
-                                                                                                 "items": [
-                                                                                                     "0d982eaa-0c91-4447-b61b-a1e4ee20e9c2",
-                                                                                                     "0e3ef5e8-3806-4217-b539-cc71482effce",
-                                                                                                     "4cb32900-e164-4e7c-a0f7-46e03a86cc9e"]}},
-                                                           "gridSize": 12,
-                                                           "gridCols": ["oneThird", "oneThird", "oneThird"]},
-                  "874c31fc-01b9-4d19-8ceb-66e93686ed24": {"@type": "columnsBlock", "data": {"blocks": {
-                      "088756e2-a183-4ea7-866f-35fffcf3a453": {"blocks": {
-                          "9b1ac3c4-5a7a-4e04-a772-96ea053e8562": {"@type": "dashboardTile", "topic": "Impacts",
-                                                                   "title": "Ecological status of surface waters in England, 2019"},
-                          "74559b24-2586-4682-b5d0-972b8ae43719": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["9b1ac3c4-5a7a-4e04-a772-96ea053e8562", "74559b24-2586-4682-b5d0-972b8ae43719"]}},
-                      "bee4bcab-ac18-4af0-ae8c-5f13270a441d": {"blocks": {
-                          "b32a4481-1694-4202-9a75-1b68d13f7dab": {"@type": "dashboardTile", "topic": "Mitigation",
-                                                                   "title": "Renewable energy share in total energy consumption, UK, 2020"},
-                          "c49a4c55-e28f-469f-b0b5-cf0e11e3c208": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["b32a4481-1694-4202-9a75-1b68d13f7dab", "c49a4c55-e28f-469f-b0b5-cf0e11e3c208"]}},
-                      "6a8f62cd-d6d2-4277-bfed-c35e04a81137": {"blocks": {
-                          "93a12089-b230-4d41-b911-415f03a00ee1": {"@type": "dashboardTile", "topic": "Adaptation",
-                                                                   "title": "New planting of UK woodlands, thousand hectares"},
-                          "d6b358d4-6c7c-4851-9c94-7949d8575956": {"@type": "slate"}}, "blocks_layout": {
-                          "items": ["93a12089-b230-4d41-b911-415f03a00ee1", "d6b358d4-6c7c-4851-9c94-7949d8575956"]}}},
-                                                                                             "blocks_layout": {
-                                                                                                 "items": [
-                                                                                                     "088756e2-a183-4ea7-866f-35fffcf3a453",
-                                                                                                     "bee4bcab-ac18-4af0-ae8c-5f13270a441d",
-                                                                                                     "6a8f62cd-d6d2-4277-bfed-c35e04a81137"]}},
-                                                           "gridSize": 12,
-                                                           "gridCols": ["oneThird", "oneThird", "oneThird"]}}
-        blocks_layout = {"items": ["1c396c10-f67e-40ba-8b63-9b8ef3cdb72d", "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26",
-                                   "874c31fc-01b9-4d19-8ceb-66e93686ed24", "e03c688a-6e8e-4405-8e60-2c89780274a5",
-                                   "bde9cf7e-9761-4cfe-8972-d13de956063e"]}
+        blocks = {
+            "1c396c10-f67e-40ba-8b63-9b8ef3cdb72d": {
+                "@type": "heroHeader",
+                "summary": "The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases to fulfil a wide range of international agreements as well as for domestic policy making purposes.",
+                "title": "Measuring greenhouse gas emissions",
+            },
+            "bde9cf7e-9761-4cfe-8972-d13de956063e": {
+                "@type": "slate",
+                "plaintext": "",
+                "value": [{"children": [{"text": ""}], "type": "p"}],
+            },
+            "e03c688a-6e8e-4405-8e60-2c89780274a5": {"@type": "title"},
+            "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26": {
+                "@type": "columnsBlock",
+                "data": {
+                    "blocks": {
+                        "0d982eaa-0c91-4447-b61b-a1e4ee20e9c2": {
+                            "blocks": {
+                                "0e5927c5-2e92-48cf-8fb5-573da68d4511": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Climate and weather",
+                                    "title": "Annual mean temperature (\u00b0C) for the UK",
+                                },
+                                "ebcd7f8b-1ec5-4423-885e-e1824c28ec3c": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "0e5927c5-2e92-48cf-8fb5-573da68d4511",
+                                    "ebcd7f8b-1ec5-4423-885e-e1824c28ec3c",
+                                ]
+                            },
+                        },
+                        "0e3ef5e8-3806-4217-b539-cc71482effce": {
+                            "blocks": {
+                                "b6b5ff1f-96cf-44ae-a9dc-e3d6e9341450": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Emissions",
+                                    "title": "Greenhouse gas emissions (Mt CO2e)",
+                                },
+                                "688fd38c-8228-4be4-a27f-4f8c48078155": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "b6b5ff1f-96cf-44ae-a9dc-e3d6e9341450",
+                                    "688fd38c-8228-4be4-a27f-4f8c48078155",
+                                ]
+                            },
+                        },
+                        "4cb32900-e164-4e7c-a0f7-46e03a86cc9e": {
+                            "blocks": {
+                                "d974efdc-e9ae-4c89-a5ee-217886bc91a2": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Drivers",
+                                    "title": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
+                                },
+                                "2d1d85d9-2432-414b-9ebc-41c4d0885712": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "d974efdc-e9ae-4c89-a5ee-217886bc91a2",
+                                    "2d1d85d9-2432-414b-9ebc-41c4d0885712",
+                                ]
+                            },
+                        },
+                    },
+                    "blocks_layout": {
+                        "items": [
+                            "0d982eaa-0c91-4447-b61b-a1e4ee20e9c2",
+                            "0e3ef5e8-3806-4217-b539-cc71482effce",
+                            "4cb32900-e164-4e7c-a0f7-46e03a86cc9e",
+                        ]
+                    },
+                },
+                "gridSize": 12,
+                "gridCols": ["oneThird", "oneThird", "oneThird"],
+            },
+            "874c31fc-01b9-4d19-8ceb-66e93686ed24": {
+                "@type": "columnsBlock",
+                "data": {
+                    "blocks": {
+                        "088756e2-a183-4ea7-866f-35fffcf3a453": {
+                            "blocks": {
+                                "9b1ac3c4-5a7a-4e04-a772-96ea053e8562": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Impacts",
+                                    "title": "Ecological status of surface waters in England, 2019",
+                                },
+                                "74559b24-2586-4682-b5d0-972b8ae43719": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "9b1ac3c4-5a7a-4e04-a772-96ea053e8562",
+                                    "74559b24-2586-4682-b5d0-972b8ae43719",
+                                ]
+                            },
+                        },
+                        "bee4bcab-ac18-4af0-ae8c-5f13270a441d": {
+                            "blocks": {
+                                "b32a4481-1694-4202-9a75-1b68d13f7dab": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Mitigation",
+                                    "title": "Renewable energy share in total energy consumption, UK, 2020",
+                                },
+                                "c49a4c55-e28f-469f-b0b5-cf0e11e3c208": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "b32a4481-1694-4202-9a75-1b68d13f7dab",
+                                    "c49a4c55-e28f-469f-b0b5-cf0e11e3c208",
+                                ]
+                            },
+                        },
+                        "6a8f62cd-d6d2-4277-bfed-c35e04a81137": {
+                            "blocks": {
+                                "93a12089-b230-4d41-b911-415f03a00ee1": {
+                                    "@type": "dashboardTile",
+                                    "topic": "Adaptation",
+                                    "title": "New planting of UK woodlands, thousand hectares",
+                                },
+                                "d6b358d4-6c7c-4851-9c94-7949d8575956": {
+                                    "@type": "slate"
+                                },
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "93a12089-b230-4d41-b911-415f03a00ee1",
+                                    "d6b358d4-6c7c-4851-9c94-7949d8575956",
+                                ]
+                            },
+                        },
+                    },
+                    "blocks_layout": {
+                        "items": [
+                            "088756e2-a183-4ea7-866f-35fffcf3a453",
+                            "bee4bcab-ac18-4af0-ae8c-5f13270a441d",
+                            "6a8f62cd-d6d2-4277-bfed-c35e04a81137",
+                        ]
+                    },
+                },
+                "gridSize": 12,
+                "gridCols": ["oneThird", "oneThird", "oneThird"],
+            },
+            "3aef1a01-6d88-4896-b8b9-16aa13c27140": {
+                "@type": "relatedLinks",
+                "data": {
+                    "blocks": {
+                        "a840aeb6-ace5-45d4-9c42-9782faf0d982": {
+                            "title": "Explore Climate Data",
+                            "description": "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets and give you the data you need.",
+                        },
+                        "32c26671-9cc4-4e55-bcb0-64f714db4aff": {
+                            "title": "Met Office",
+                            "description": "Met Office Weather Forecast for the UK. World leading weather services for the public.",
+                        },
+                        "c213a3cd-8d48-4791-bf93-563ae6a72505": {
+                            "title": "Forestry Research",
+                            "description": "Forest Research is Great Britain's Principal organisation for forestry and tree related research and is internationally renowed for the provision of evidence..",
+                        },
+                        "3d556f68-24f7-46ae-822c-0cc1fa507ef7": {
+                            "title": "Department for International Business, Energy and Industrial Strategy",
+                            "description": "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..",
+                        },
+                    },
+                    "blocks_layout": {
+                        "items": [
+                            "a840aeb6-ace5-45d4-9c42-9782faf0d982",
+                            "32c26671-9cc4-4e55-bcb0-64f714db4aff",
+                            "c213a3cd-8d48-4791-bf93-563ae6a72505",
+                            "3d556f68-24f7-46ae-822c-0cc1fa507ef7",
+                        ]
+                    },
+                },
+            },
+        }
+        blocks_layout = {
+            "items": [
+                "1c396c10-f67e-40ba-8b63-9b8ef3cdb72d",
+                "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26",
+                "874c31fc-01b9-4d19-8ceb-66e93686ed24",
+                "e03c688a-6e8e-4405-8e60-2c89780274a5",
+                "bde9cf7e-9761-4cfe-8972-d13de956063e",
+                "3aef1a01-6d88-4896-b8b9-16aa13c27140",
+            ]
+        }
 
         portal.setTitle("Climate Change Statistics")
-        portal.setDescription("A prototype portal for data and insights on climate change.")
+        portal.setDescription(
+            "A prototype portal for data and insights on climate change."
+        )
 
         logger.info("Creating default homepage in Plone site root - not PAM enabled")
 
