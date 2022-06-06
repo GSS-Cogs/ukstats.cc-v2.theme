@@ -251,18 +251,22 @@ def create_root_homepage(context, default_home=None):
                         "a840aeb6-ace5-45d4-9c42-9782faf0d982": {
                             "title": "Explore Climate Data",
                             "description": "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets and give you the data you need.",
+                            "link": "#",
                         },
                         "32c26671-9cc4-4e55-bcb0-64f714db4aff": {
                             "title": "Met Office",
                             "description": "Met Office Weather Forecast for the UK. World leading weather services for the public.",
+                            "link": "#",
                         },
                         "c213a3cd-8d48-4791-bf93-563ae6a72505": {
                             "title": "Forestry Research",
                             "description": "Forest Research is Great Britain's Principal organisation for forestry and tree related research and is internationally renowed for the provision of evidence..",
+                            "link": "#",
                         },
                         "3d556f68-24f7-46ae-822c-0cc1fa507ef7": {
                             "title": "Department for International Business, Energy and Industrial Strategy",
                             "description": "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..",
+                            "link": "#",
                         },
                     },
                     "blocks_layout": {
