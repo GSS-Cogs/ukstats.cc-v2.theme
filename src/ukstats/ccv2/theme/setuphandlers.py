@@ -98,12 +98,6 @@ def create_root_homepage(context, default_home=None):
                 "summary": "The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases to fulfil a wide range of international agreements as well as for domestic policy making purposes.",
                 "title": "Measuring greenhouse gas emissions",
             },
-            "bde9cf7e-9761-4cfe-8972-d13de956063e": {
-                "@type": "slate",
-                "plaintext": "",
-                "value": [{"children": [{"text": ""}], "type": "p"}],
-            },
-            "e03c688a-6e8e-4405-8e60-2c89780274a5": {"@type": "title"},
             "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26": {
                 "@type": "columnsBlock",
                 "data": {
@@ -244,40 +238,63 @@ def create_root_homepage(context, default_home=None):
                 "gridSize": 12,
                 "gridCols": ["oneThird", "oneThird", "oneThird"],
             },
-            "3aef1a01-6d88-4896-b8b9-16aa13c27140": {
-                "@type": "relatedLinks",
+            "e03c688a-6e8e-4405-8e60-2c89780274a5": {
+                "@type": "title"
+            },
+            "4e16924c-5bd8-4cd9-82ec-6470d10f5ca4": {
+                "@type": "columnsBlock",
+                "block_title": "Columns",
                 "data": {
                     "blocks": {
-                        "a840aeb6-ace5-45d4-9c42-9782faf0d982": {
-                            "title": "Explore Climate Data",
-                            "description": "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets and give you the data you need.",
-                            "link": "#",
+                        "846d9bfb-9253-489b-bdfa-63d415264ea8": {
+                            "blocks": {
+                                "aae2a30b-a08f-41c1-946f-26edd8a4e748": {"@type": "slate"}
+                            },
+                            "blocks_layout": {
+                                "items": ["aae2a30b-a08f-41c1-946f-26edd8a4e748"]
+                            }
                         },
-                        "32c26671-9cc4-4e55-bcb0-64f714db4aff": {
-                            "title": "Met Office",
-                            "description": "Met Office Weather Forecast for the UK. World leading weather services for the public.",
-                            "link": "#",
-                        },
-                        "c213a3cd-8d48-4791-bf93-563ae6a72505": {
-                            "title": "Forestry Research",
-                            "description": "Forest Research is Great Britain's Principal organisation for forestry and tree related research and is internationally renowed for the provision of evidence..",
-                            "link": "#",
-                        },
-                        "3d556f68-24f7-46ae-822c-0cc1fa507ef7": {
-                            "title": "Department for International Business, Energy and Industrial Strategy",
-                            "description": "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..",
-                            "link": "#",
-                        },
+                        "0100b4a0-fa99-4076-8a2e-123d554e455f": {
+                            "blocks": {
+                                "de28e1f3-8811-4b0c-a53b-480bfa98d26a": {
+                                    "@type": "html", "html": "<h2 class=\"cc-related-links\">Related Links</h2>"
+                                },
+                                "8ea48dad-d359-4512-a52e-16757aaa39fb": {
+                                    "@type": "listing",
+                                    "query": [],
+                                    "block": "8ea48dad-d359-4512-a52e-16757aaa39fb",
+                                    "variation": "default",
+                                    "querystring": {
+                                        "query": [{
+                                            "i": "portal_type",
+                                            "o": "plone.app.querystring.operation.selection.any",
+                                            "v": ["Link"]
+                                        }, {
+                                            "i": "path",
+                                            "o": "plone.app.querystring.operation.string.absolutePath",
+                                            "v": "/references"
+                                        }], "sort_order": "ascending"
+                                    }
+                                }
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "de28e1f3-8811-4b0c-a53b-480bfa98d26a",
+                                    "8ea48dad-d359-4512-a52e-16757aaa39fb"
+                                ]
+                            },
+                            "selected": "8ea48dad-d359-4512-a52e-16757aaa39fb"
+                        }
                     },
                     "blocks_layout": {
                         "items": [
-                            "a840aeb6-ace5-45d4-9c42-9782faf0d982",
-                            "32c26671-9cc4-4e55-bcb0-64f714db4aff",
-                            "c213a3cd-8d48-4791-bf93-563ae6a72505",
-                            "3d556f68-24f7-46ae-822c-0cc1fa507ef7",
+                            "846d9bfb-9253-489b-bdfa-63d415264ea8",
+                            "0100b4a0-fa99-4076-8a2e-123d554e455f",
                         ]
                     },
                 },
+                "gridSize": 12,
+                "gridCols": ["twoThirds", "oneThird"]
             },
         }
         blocks_layout = {
@@ -286,8 +303,7 @@ def create_root_homepage(context, default_home=None):
                 "5e32f9d6-9647-4b6d-a866-b03aa9ec5b26",
                 "874c31fc-01b9-4d19-8ceb-66e93686ed24",
                 "e03c688a-6e8e-4405-8e60-2c89780274a5",
-                "bde9cf7e-9761-4cfe-8972-d13de956063e",
-                "3aef1a01-6d88-4896-b8b9-16aa13c27140",
+                "4e16924c-5bd8-4cd9-82ec-6470d10f5ca4"
             ]
         }
 
