@@ -106,8 +106,62 @@ def create_root_homepage(context, default_home=None):
                             "blocks": {
                                 "0e5927c5-2e92-48cf-8fb5-573da68d4511": {
                                     "@type": "dashboardTile",
-                                    "topic": "Climate and weather",
                                     "title": "Annual mean temperature (\u00b0C) for the UK",
+                                    "topic": "Climate and weather",
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/tile-uk-annual-mean-temperature",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-05-18T08:23:07+00:00",
+                                            "Creator": "aa750921-8eed-4a64-9f39-f1f7a33027c7",
+                                            "Date": "2022-05-18T13:13:18+00:00",
+                                            "Description": "",
+                                            "EffectiveDate": "2022-05-18T13:13:18+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:58+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; SparkLine; UK annual mean temperature",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "2b4bab1f95f74e68a44251b049c7b65a",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-05-18T08:23:07+00:00",
+                                            "description": "",
+                                            "effective": "2022-05-18T13:13:18+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "tile-uk-annual-mean-temperature",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/tile-uk-annual-mean-temperature",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/tile-uk-annual-mean-temperature",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "tile-uk-annual-mean-temperature",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "aa750921-8eed-4a64-9f39-f1f7a33027c7"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:58+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; SparkLine; UK annual mean temperature",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "spark_line"
                                 },
                                 "ebcd7f8b-1ec5-4423-885e-e1824c28ec3c": {
                                     "@type": "slate"
@@ -122,13 +176,67 @@ def create_root_homepage(context, default_home=None):
                         },
                         "0e3ef5e8-3806-4217-b539-cc71482effce": {
                             "blocks": {
+                                "688fd38c-8228-4be4-a27f-4f8c48078155": {
+                                    "@type": "slate"
+                                },
                                 "b6b5ff1f-96cf-44ae-a9dc-e3d6e9341450": {
                                     "@type": "dashboardTile",
                                     "topic": "Emissions",
                                     "title": "Greenhouse gas emissions (Mt CO2e)",
-                                },
-                                "688fd38c-8228-4be4-a27f-4f8c48078155": {
-                                    "@type": "slate"
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/tile-sparkline-greenhouse-gas-emissions",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-06-08T13:02:18+00:00",
+                                            "Creator": "2bdc1d87-83ae-4549-8ebf-ffdd7eb572ee",
+                                            "Date": "2022-06-08T13:04:00+00:00",
+                                            "Description": "",
+                                            "EffectiveDate": "2022-06-08T13:04:00+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:59+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; Sparkline; Greenhouse Gas Emissions",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "fa8d1afba4574c22a70767000fdc52e7",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-06-08T13:02:18+00:00",
+                                            "description": "",
+                                            "effective": "2022-06-08T13:04:00+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "tile-sparkline-greenhouse-gas-emissions",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/tile-sparkline-greenhouse-gas-emissions",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/tile-sparkline-greenhouse-gas-emissions",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "tile-sparkline-greenhouse-gas-emissions",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "2bdc1d87-83ae-4549-8ebf-ffdd7eb572ee"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:59+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; Sparkline; Greenhouse Gas Emissions",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "spark_line"
                                 },
                             },
                             "blocks_layout": {
@@ -140,13 +248,67 @@ def create_root_homepage(context, default_home=None):
                         },
                         "4cb32900-e164-4e7c-a0f7-46e03a86cc9e": {
                             "blocks": {
-                                "d974efdc-e9ae-4c89-a5ee-217886bc91a2": {
-                                    "@type": "dashboardTile",
-                                    "topic": "Drivers",
-                                    "title": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
-                                },
                                 "2d1d85d9-2432-414b-9ebc-41c4d0885712": {
                                     "@type": "slate"
+                                },
+                                "d974efdc-e9ae-4c89-a5ee-217886bc91a2": {
+                                    "@type": "dashboardTile",
+                                    "title": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
+                                    "topic": "Drivers",
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/use-of-carbon-based-fuels-by-industry-1990-to-2019",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-05-18T08:23:07+00:00",
+                                            "Creator": "aa750921-8eed-4a64-9f39-f1f7a33027c7",
+                                            "Date": "2022-05-18T13:13:18+00:00",
+                                            "Description": "Aggregated to match the totals here: https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsfuelusebytypeandindustry",
+                                            "EffectiveDate": "2022-05-18T13:13:18+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:58+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; SparkLine; Use of carbon based fuels by industry, 1990 to 2019",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "c064d3c42ed64d33a91cc65dd44b4a70",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-05-18T08:23:07+00:00",
+                                            "description": "Aggregated to match the totals here: https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsfuelusebytypeandindustry",
+                                            "effective": "2022-05-18T13:13:18+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "use-of-carbon-based-fuels-by-industry-1990-to-2019",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/use-of-carbon-based-fuels-by-industry-1990-to-2019",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/use-of-carbon-based-fuels-by-industry-1990-to-2019",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "use-of-carbon-based-fuels-by-industry-1990-to-2019",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "aa750921-8eed-4a64-9f39-f1f7a33027c7"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:58+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; SparkLine; Use of carbon based fuels by industry, 1990 to 2019",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "spark_line"
                                 },
                             },
                             "blocks_layout": {
@@ -174,13 +336,67 @@ def create_root_homepage(context, default_home=None):
                     "blocks": {
                         "088756e2-a183-4ea7-866f-35fffcf3a453": {
                             "blocks": {
-                                "9b1ac3c4-5a7a-4e04-a772-96ea053e8562": {
-                                    "@type": "dashboardTile",
-                                    "topic": "Impacts",
-                                    "title": "Ecological status of surface waters in England, 2019",
-                                },
                                 "74559b24-2586-4682-b5d0-972b8ae43719": {
                                     "@type": "slate"
+                                },
+                                "9b1ac3c4-5a7a-4e04-a772-96ea053e8562": {
+                                    "@type": "dashboardTile",
+                                    "title": "Ecological status of surface waters in England, 2019",
+                                    "topic": "Impacts",
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/tile-status-of-the-ecological-environment",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-05-18T08:23:36+00:00",
+                                            "Creator": "aa750921-8eed-4a64-9f39-f1f7a33027c7",
+                                            "Date": "2022-05-18T13:13:16+00:00",
+                                            "Description": "",
+                                            "EffectiveDate": "2022-05-18T13:13:16+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:58+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; Bar; Status of the Ecological Environment",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "88ddb08d26354715b5d9a4e86debc173",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-05-18T08:23:36+00:00",
+                                            "description": "",
+                                            "effective": "2022-05-18T13:13:16+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "tile-status-of-the-ecological-environment",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/tile-status-of-the-ecological-environment",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/tile-status-of-the-ecological-environment",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "tile-status-of-the-ecological-environment",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "aa750921-8eed-4a64-9f39-f1f7a33027c7"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:58+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; Bar; Status of the Ecological Environment",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "bar"
                                 },
                             },
                             "blocks_layout": {
@@ -190,30 +406,66 @@ def create_root_homepage(context, default_home=None):
                                 ]
                             },
                         },
-                        "bee4bcab-ac18-4af0-ae8c-5f13270a441d": {
-                            "blocks": {
-                                "b32a4481-1694-4202-9a75-1b68d13f7dab": {
-                                    "@type": "dashboardTile",
-                                    "topic": "Mitigation",
-                                    "title": "Renewable energy share in total energy consumption, UK, 2020",
-                                },
-                                "c49a4c55-e28f-469f-b0b5-cf0e11e3c208": {
-                                    "@type": "slate"
-                                },
-                            },
-                            "blocks_layout": {
-                                "items": [
-                                    "b32a4481-1694-4202-9a75-1b68d13f7dab",
-                                    "c49a4c55-e28f-469f-b0b5-cf0e11e3c208",
-                                ]
-                            },
-                        },
                         "6a8f62cd-d6d2-4277-bfed-c35e04a81137": {
                             "blocks": {
                                 "93a12089-b230-4d41-b911-415f03a00ee1": {
                                     "@type": "dashboardTile",
-                                    "topic": "Adaptation",
                                     "title": "New planting of UK woodlands, thousand hectares",
+                                    "topic": "Adaptation",
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/new-planting-of-uk-woodlands-thousand-hectares-1976-to-2021",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-05-18T08:23:07+00:00",
+                                            "Creator": "aa750921-8eed-4a64-9f39-f1f7a33027c7",
+                                            "Date": "2022-05-18T13:13:18+00:00",
+                                            "Description": "",
+                                            "EffectiveDate": "2022-05-18T13:13:18+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:59+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; SparkLine; New planting of UK woodlands, thousand hectares, 1976 to 2021",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "304c40ebebe2402b86d8f277d7328f77",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-05-18T08:23:07+00:00",
+                                            "description": "",
+                                            "effective": "2022-05-18T13:13:18+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "new-planting-of-uk-woodlands-thousand-hectares-1976-to-2021",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/new-planting-of-uk-woodlands-thousand-hectares-1976-to-2021",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/new-planting-of-uk-woodlands-thousand-hectares-1976-to-2021",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "new-planting-of-uk-woodlands-thousand-hectares-1976-to-2021",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "aa750921-8eed-4a64-9f39-f1f7a33027c7"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:59+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; SparkLine; New planting of UK woodlands, thousand hectares, 1976 to 2021",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "spark_line"
                                 },
                                 "d6b358d4-6c7c-4851-9c94-7949d8575956": {
                                     "@type": "slate"
@@ -225,6 +477,78 @@ def create_root_homepage(context, default_home=None):
                                     "d6b358d4-6c7c-4851-9c94-7949d8575956",
                                 ]
                             },
+                        },
+                        "bee4bcab-ac18-4af0-ae8c-5f13270a441d": {
+                            "blocks": {
+                                "b32a4481-1694-4202-9a75-1b68d13f7dab": {
+                                    "@type": "dashboardTile",
+                                    "title": "Renewable energy share in total energy consumption, UK, 2020",
+                                    "topic": "Mitigation",
+                                    "data_source": [
+                                        {
+                                            "@id": "/overview-data/renewable-energy-share-in-total-energy-consumption-uk-2020",
+                                            "@type": "sparql_dataconnector",
+                                            "CreationDate": "2022-05-18T08:23:36+00:00",
+                                            "Creator": "aa750921-8eed-4a64-9f39-f1f7a33027c7",
+                                            "Date": "2022-05-18T13:13:16+00:00",
+                                            "Description": "17%, not 16%...",
+                                            "EffectiveDate": "2022-05-18T13:13:16+00:00",
+                                            "ExpirationDate": "None",
+                                            "ModificationDate": "2022-06-15T21:06:58+00:00",
+                                            "Subject": [],
+                                            "Title": "Tile; Bar; Renewable energy share in total energy consumption, UK, 2020",
+                                            "Type": "SPARQL Data Connector",
+                                            "UID": "d84d31651d3e4a7093316cc5c744c770",
+                                            "author_name": None,
+                                            "cmf_uid": None,
+                                            "commentators": [],
+                                            "created": "2022-05-18T08:23:36+00:00",
+                                            "description": "17%, not 16%...",
+                                            "effective": "2022-05-18T13:13:16+00:00",
+                                            "end": None,
+                                            "exclude_from_nav": False,
+                                            "expires": "2499-12-31T00:00:00+00:00",
+                                            "getIcon": None,
+                                            "getId": "renewable-energy-share-in-total-energy-consumption-uk-2020",
+                                            "getObjSize": "0 KB",
+                                            "getPath": "/Plone/overview-data/renewable-energy-share-in-total-energy-consumption-uk-2020",
+                                            "getRemoteUrl": None,
+                                            "getURL": "http://climate-change.data.gov.uk/api/overview-data/renewable-energy-share-in-total-energy-consumption-uk-2020",
+                                            "hasPreviewImage": None,
+                                            "head_title": None,
+                                            "id": "renewable-energy-share-in-total-energy-consumption-uk-2020",
+                                            "in_response_to": None,
+                                            "is_folderish": True,
+                                            "last_comment_date": None,
+                                            "lead_image": None,
+                                            "listCreators": [
+                                                "aa750921-8eed-4a64-9f39-f1f7a33027c7"
+                                            ],
+                                            "location": None,
+                                            "meta_type": "Dexterity Container",
+                                            "mime_type": "text/plain",
+                                            "modified": "2022-06-15T21:06:58+00:00",
+                                            "nav_title": None,
+                                            "portal_type": "sparql_dataconnector",
+                                            "review_state": "published",
+                                            "start": None,
+                                            "sync_uid": None,
+                                            "title": "Tile; Bar; Renewable energy share in total energy consumption, UK, 2020",
+                                            "total_comments": 0
+                                        }
+                                    ],
+                                    "vis_type": "bar"
+                                },
+                                "c49a4c55-e28f-469f-b0b5-cf0e11e3c208": {
+                                    "@type": "slate"
+                                }
+                            },
+                            "blocks_layout": {
+                                "items": [
+                                    "b32a4481-1694-4202-9a75-1b68d13f7dab",
+                                    "c49a4c55-e28f-469f-b0b5-cf0e11e3c208"
+                                ]
+                            }
                         },
                     },
                     "blocks_layout": {
