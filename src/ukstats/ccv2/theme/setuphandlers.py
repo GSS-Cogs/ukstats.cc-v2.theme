@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
-import json
 
 import logging
+from importlib import resources
 
 from Products.CMFPlone.interfaces import INonInstallable
 from Products.CMFPlone.utils import get_installer
 from kitconcept.volto.setuphandlers import (
-    enable_content_type,
     add_behavior,
     default_lrf_home,
 )
 from plone import api
 from zope.interface import implementer
-
-from importlib import resources
 from . import content
 
 logger = logging.getLogger("ukstats.ccv2.theme")
@@ -98,7 +95,7 @@ def create_root_homepage(context, default_home=None):
         blocks = resources.read_text(content, 'front_blocks.json')
         blocks_layout = resources.read_text(content, 'front_blocks_layout.json')
 
-        portal.setTitle("Climate Change Statistics")
+        portal.setTitle(" ")
         portal.setDescription(
             "A prototype portal for data and insights on climate change."
         )
