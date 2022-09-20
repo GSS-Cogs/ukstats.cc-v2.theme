@@ -14,8 +14,7 @@ VAR_DIR = Path(cp['buildout']['var-dir'])
 IMPORT_ROOT = VAR_DIR / 'instance' / 'import'
 IMPORT_ROOT.mkdir(parents=True, exist_ok=True)
 
-for f in HERE.glob('*.zexp'):
+for f in IMPORT_ROOT.glob('*.zexp'):
     obj = f.stem
     if obj not in portal:
-        shutil.copy(f, IMPORT_ROOT)
         portal.manage_importObject(f.name)
